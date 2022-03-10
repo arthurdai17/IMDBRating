@@ -23,7 +23,7 @@ public class IMDBRatingTest
         averageRating = rater.addNewRating(4);
         assertEquals(averageRating == 4.0, true);
 
-        averageRating = rater.addNewRating(9); //25
+        averageRat = rater.addNewRating(9); //25
         assertTrue(averageRating == 5.0, "Adding 5th rating: average should be 5.0");
 
         averageRating = rater.addNewRating(7); //32
