@@ -31,5 +31,8 @@ public class IMDBRatingTest
 
         averageRating = rater.addNewRating(10); //40
         assertFalse(averageRating == 5.714285714285F, "Adding 7th rating: average should be 5.714285.....");
+
+        averageRating = rater.addNewRating(14);
+        assertFalse(averageRating == 5.888888888888F, "Adding 8th rating: average should not be 5.888888.....");
     }
 }
